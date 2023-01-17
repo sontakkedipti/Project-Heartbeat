@@ -49,7 +49,7 @@ function dataImport() {
 		var data = [
 			{
 				x: ['Zero Conditions', 'One Condition', 'Two Conditions', 'Three Conditions', 'Four Conditions'],
-				y: [data[4]['A0'], data[4]['A1'], data[4]['A2'], data[4]['A3'], data[4]['A4']],
+				y: [data[0]['A0'], data[0]['A1'], data[0]['A2'], data[0]['A3'], data[0]['A4']],
 				type: 'bar',
 				marker: {
 					color: [
@@ -91,7 +91,7 @@ function dataImport() {
 
 			var data = [all, female, male];
 			var layout = {
-				title: 'Risk of Heart Disease with multiple conditions',
+				title: 'Risk of Heart Disease based on lifestyle',
 			  };
 			Plotly.newPlot('plot', data, layout);
 	})
@@ -118,15 +118,15 @@ function updatePlotly() {
 		if (dataset === 'MaleandFemale') {
 
 			x = ['Zero', 'One', 'Two', 'Three', 'Four'];
-			y = [data[4]['A0'], data[4]['A1'], data[4]['A2'], data[4]['A3'], data[4]['A4']];
+			y = [data[0]['A0'], data[0]['A1'], data[0]['A2'], data[0]['A3'], data[0]['A4']];
 		}
 		else if (dataset === 'Female') {
 			x = ['Zero', 'One', 'Two', 'Three', 'Four'];
-			y = [data[4]['F0'], data[4]['F1'], data[4]['F2'], data[4]['F3'], data[4]['F4']];
+			y = [data[0]['F0'], data[0]['F1'], data[0]['F2'], data[0]['F3'], data[0]['F4']];
 		}
 		else if (dataset === 'Male') {
 			x = ['Zero', 'One', 'Two', 'Three', 'Four'];
-			y = [data[4]['M0'], data[4]['M1'], data[4]['M2'], data[4]['M3'], data[4]['M4']];
+			y = [data[0]['M0'], data[0]['M1'], data[0]['M2'], data[0]['M3'], data[0]['M4']];
 		}
 		// Note the extra brackets around 'x' and 'y'
 		Plotly.restyle("myDiv", "x", [x]);
