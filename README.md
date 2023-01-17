@@ -29,7 +29,20 @@ What issues we faced ? <br>
 Came across couple of issues - 1. As the data size being large, web browser was limiting to render the data and display in web page. We understood the problem and limited and parsed our data thru MongoDB and limited the records to have more refined display.
 Index.html has multiple issued which was limiting the data to be displayed in correct position on Webpage. So had to recreate the basic html and css file and then merged with .js, app.py file.
 
+Files for reference : <br>
+App.py – The Flask file that pulls in the heart disease data from the mongo database. Algorithms are applied to the data to feed the plots in the index.HTML. <br>
+HeartDisease_Calc_Combined.ipynb – Jupyter notebook that combines all code required to create the MongoDB database and collections required for the charts. <br>
+Main.js – Java script file that <br>
+Index.html – Homepage HTML file <br>
+Gender.html – HTML file for the gender tab <br>
+Conditions.html – HTML code for the conditions tab <br>
+Heart_2020_cleaned.csv – Data file downloaded from Kaggle <br>
+Static Folder: Contains all of the Java Script files and CSS files required to run the html sites. <br>
 
+Scratch work: Files that were generated during the project but are no longer in use <br>
+Heart_Data_Import.ipynb <br>
+VP_HeartDisease_Calculations.ipynb <br>
+HeartDisease_Calculations.ipynb <br>
 
 Collaborators List :<br>
 Dipti - <br>
