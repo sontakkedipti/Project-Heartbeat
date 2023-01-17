@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.pkgd.min.js" crossorigin="anonymous"
+            integrity="sha256-QrereSaEXrySHzmdESqHa0vOVUgyR029+xSX0kEJjxU="></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">      -->
+        <link href="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.min.css" rel="stylesheet" crossorigin="anonymous"
+            integrity="sha256-jRKekTG/GrAnauo7RxosoyirpdEX9OZ02o0HAAvORsc=">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+        body {
+            background-image: url(bg2.jpg);
+            height: 100%;
+            width: 100%;
+        
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              height:75px;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 20px;
+              text-decoration: none;
+              font-size: 40px;
+            }
+            
+            li a:hover {
+              background-color: #111;
+            }
+            .center {
+                width: 50%;
+                padding: 10px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            </style>
+        <!-- head definitions go here -->
+        <title> Heart Data</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <body>
+        <!-- NAV BAR-->
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="conditions">Conditions</a></li>
+            <li class="nav-item"><a class="nav-link" href="gender">Gender</a></li>
+        </ul>
+
+        <div class="center"><h1>Heart Disease Conditions</h1></div>
+        <h2>Here we are looking at how pre-existing conditions affect the chances of heart disease. 
+            Those conditions being: Diabetes, Skin Cancer, Asthma, and Kidney Disease.
+            In all circumstances the probability of heart rate increases if the person has a pre-existing condition with the most drastic being Diabetes and Kidney Disease.</h2>
+        <br>
+   
+        <form class= "center" id="form">
+            <label for="stack" style="color:black; padding:10px; font-size: 50px"><input type="radio" name="stack" value="Diabetes" >Diabetes</label>
+            <label for="stack" style="color:black; padding:10px; font-size: 50px"><input type="radio" name="stack" value="Skin Cancer" >Skin Cancer</label>
+            <label for="stack" style="color:black; padding:10px; font-size: 50px"><input type="radio" name="stack" value="Asthma">Asthma</label>
+            <label for="stack" style="color:black; padding:10px; font-size: 50px"><input type="radio" name="stack" value="Kidney Disease">Kidney Disease</label>
+        </form>
+
+        <div class="charts" id="d_dict"></div>
+        <div class="charts" id="nd_dict"></div>
+        <div class="charts" id="sc_dict"></div>
+        <div class="charts" id="nc_dict"></div>
+        <div class="charts" id="a_dict"></div>
+        <div class="charts" id="na_dict"></div>
+        <div class="charts" id="kd_dict"></div>
+        <div class="charts" id="nkd_dict"></div>
+
+        <script src="../static/main.js"></script>
+
+    </body>
+</html>

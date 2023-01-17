@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.pkgd.min.js" crossorigin="anonymous"
+            integrity="sha256-QrereSaEXrySHzmdESqHa0vOVUgyR029+xSX0kEJjxU="></script>
+        <link href="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.min.css" rel="stylesheet" crossorigin="anonymous"
+            integrity="sha256-jRKekTG/GrAnauo7RxosoyirpdEX9OZ02o0HAAvORsc=">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              height:75px;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 20px;
+              text-decoration: none;
+              font-size: 40px;
+            }
+            
+            li a:hover {
+              background-color: #111;
+            }
+
+            select {
+                font-size: 18px;
+            }
+            .center {
+                width: 50%;
+                padding: 10px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .dropdownCenter {
+                padding: 10px;
+                margin-left:500px;
+                margin-right:auto;
+            }
+            body {
+                background-image: url(bg2.jpg);
+                height: 100%;
+                width: 100%;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            </style>
+        <!-- head definitions go here -->
+        <title> Gender Data</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <body>
+        <!-- NAV BAR-->
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="conditions">Conditions</a></li>
+            <li class="nav-item"><a class="nav-link" href="gender">Gender</a></li>
+        </ul>
+        <div></div>
+
+        <div class="center"><h1>Heart Disease by Gender</h1></div>
+        <h2>We've looked at the differences in heart disease between men and women. As the count of underlying disceases increases, chances of getting heart discease increases proportionally. 
+            This is also known as Comorbidity - The Presence of more than one medical condition in a patient that may contribute to clinical progression of the primary disorder. 
+            We've taken the data to analyze how comorbidity affects men and women with heart disease and we've noticed that men have a slightly higher chance of getting heart disease than women</h2>
+        <br>
+
+        <select class="dropdownCenter" id="selDataset">
+            <option value="MaleandFemale"> Male and Female</option>
+            <option value="Female"> Female</option>
+            <option value="Male"> Male</option>
+        </select>
+            
+        <div class="center" id="myDiv"></div>
+        <div class="center" id="plot"></div>
+
+        <div class="row">
+            <div class="column" id="m Chart"></div>
+            <div class="column" id="f Chart"></div>
+        </div>
+
+        <script src="../static/gender.js"></script>
+
+    </body>
+</html>
