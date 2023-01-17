@@ -85,5 +85,12 @@ Re-usable, easy interface JavaScript chart library based on D3 v4+ <br>
 Code Snippet : <br>
 
 
+
 Charts Snippet : <br>
+![image](https://user-images.githubusercontent.com/112952607/213028543-db2db326-f1d0-4e55-ae25-0e44fe4e058b.png)
+![image](https://user-images.githubusercontent.com/112952607/213028683-b7eb6ff9-db04-4a0e-bd00-0890b13505d7.png)
+![image](https://user-images.githubusercontent.com/112952607/213028755-d6968228-0b47-4bb8-884a-8b6a08efc8b2.png)
+![image](https://user-images.githubusercontent.com/112952607/213028833-71b76a83-196f-4317-8e4d-a8495f378901.png)
+![image](https://user-images.githubusercontent.com/112952607/213028985-5a079e31-29eb-4ea3-b60b-3d23c19c398b.png)
+![image](https://user-images.githubusercontent.com/112952607/213029064-f5162556-dafb-47ee-8d4f-122cfecbb7ce.png)
 
